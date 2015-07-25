@@ -1,0 +1,33 @@
+{
+  "name": "electron-angular2",
+  "version": "0.0.0",
+  "description": "Starter app for electron-angular2",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsanth/electron-angular2.git"
+  },
+  "author": "Santhosh Kumar Bala Krishnan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bsanth/electron-angular2/issues"
+  },
+  "homepage": "https://github.com/bsanth/electron-angular2#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.30.1",
+    "jspm": "^0.15.7"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "browser"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
+}
