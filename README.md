@@ -134,10 +134,13 @@ I did not want to clone an existing starter branch and start off from there, rat
     ```
     
 * Let's tell electron where to look for the entry point js file. Edit package.json and add the following line if not already added.
+
     ```
       "main": "app/index.js",
     ```
 * Just to make sure I got the electron part working, I ran the following command to see if I can see my app running - after adding some content to index.html. HOORAY!
+
     ```
     electron .
     ```
+* 
