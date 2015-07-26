@@ -143,4 +143,30 @@ I did not want to clone an existing starter branch and start off from there, rat
     ```
     electron .
     ```
-* 
+* **Let's get to the angular2 part!**
+
+* Angular2 is based off TypeScript. Let's install TypeScript next. These are taken from [AngularJS QuickStart guide](https://angular.io/docs/js/latest/quickstart.html)
+
+    ```
+        npm install -g tsd@^0.6.0
+        tsd install angular2 es6-promise rx rx-lite
+        npm install -g typescript
+    ```
+
+* Let's init TSD so that we have the config file set up.
+
+    ```
+    tsd init
+    ```
+* Get angular2.js from NPM.
+
+    ```
+    npm install angular2 --save
+    ```
+* Moving on to index.html inside browser folder. Added all the dependent js file scripts and SystemJS configuration.
+
+### Heavily inspired from
+* https://github.com/atom/electron/blob/master/docs/tutorial/quick-start.md
+* http://www.dotnet-rocks.com/2015/05/04/writing-an-electron-atom-shell-app-using-angular-and-es6/
+
+    Thank you both!
