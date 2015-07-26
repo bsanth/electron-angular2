@@ -4,7 +4,7 @@
   "description": "Starter app for electron-angular2",
   "main": "app/index.js",
   "scripts": {
-    "test": "electron ."
+    "build": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,10 @@
       "babel-runtime": "npm:babel-runtime@^5.1.13",
       "core-js": "npm:core-js@^0.9.4"
     }
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.32",
+    "reflect-metadata": "^0.1.0",
+    "systemjs": "^0.18.4"
   }
 }
