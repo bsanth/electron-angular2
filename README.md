@@ -60,28 +60,7 @@ I did not want to clone an existing starter branch and start off from there, rat
     npm install electron-prebuilt -g
     npm install electron-prebuilt --save-dev
     ```
-* Get JSPM next to manage front-end dependencies.
 
-    ```
-    npm install jspm -g
-    npm install jspm --save-dev
-    ```
-* Init JSPM
-
-    ```
-    jspm init
-    ```
-* According to electron coding styles, we put all the views related to the app in a folder called browser. This would also contain the styles, scripts, etc. All front-end dependencies from JSPM would also go into this. Hence this is how my jspm init looks:
-
-    ```
-    Would you like jspm to prefix the jspm package.json properties under jspm? [yes]:
-    Enter server baseURL (public folder path) [./]:./browser
-    Enter jspm packages folder [browser/jspm_packages]:
-    Enter config file path [browser/config.js]:
-    Configuration file browser/config.js doesn't exist, create it? [yes]:
-    Enter client baseURL (public folder URL) [/]:
-    Which ES6 transpiler would you like to use, Traceur or Babel? [babel]:
-    ```
 * Let's create a base index file:
 
     ```
@@ -158,16 +137,27 @@ I did not want to clone an existing starter branch and start off from there, rat
     ```
     tsd init
     ```
-* Get angular2.js and systemJS from NPM.
+* Get angular2.js, systemJS and reflect-metadata from NPM.
 
     ```
     npm install angular2 --save
     npm install systemjs --save
+    npm install reflect-metadata --save
     ```
 * Moving on to index.html inside browser folder. Added all the dependent js file scripts and SystemJS configuration.
+
+* Create new main.ts file as found in this git repo. This is also form the [angular quickstart guide](https://angular.io/docs/js/latest/quickstart.html).
+
+* Watch and compile the .ts file.
+
+    ```
+    tsc -m commonjs -t es5 --emitDecoratorMetadata browser/main.ts --watch
+    ```
+* Once the compile completes, run electron again and **you're done!**
 
 ### Heavily inspired from
 * https://github.com/atom/electron/blob/master/docs/tutorial/quick-start.md
 * http://www.dotnet-rocks.com/2015/05/04/writing-an-electron-atom-shell-app-using-angular-and-es6/
+* https://github.com/SebastianM/angular2-bootstrap/blob/01e0e99a51466772af77aa351217a1d87aabe7b6/examples/index.html
 
     Thank you both!
