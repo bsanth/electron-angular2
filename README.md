@@ -158,10 +158,11 @@ I did not want to clone an existing starter branch and start off from there, rat
     ```
     tsd init
     ```
-* Get angular2.js from NPM.
+* Get angular2.js and systemJS from NPM.
 
     ```
     npm install angular2 --save
+    npm install systemjs --save
     ```
 * Moving on to index.html inside browser folder. Added all the dependent js file scripts and SystemJS configuration.
 
