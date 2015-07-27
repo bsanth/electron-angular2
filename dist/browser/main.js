@@ -6,9 +6,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
         case 4: return decorators.reduceRight(function(o, d) { return (d && d(target, key, o)) || o; }, desc);
     }
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 /// <reference path="../typings/angular2/angular2.d.ts" />
 ///<reference path="../typings/es6-promise/es6-promise.d.ts"/>
 ///<reference path="../typings/rx/rx.d.ts"/>
@@ -24,9 +21,9 @@ var MyAppComponent = (function () {
         }),
         angular2_1.View({
             template: '<h1>Hello {{ name }}</h1>'
-        }), 
-        __metadata('design:paramtypes', [])
+        })
     ], MyAppComponent);
     return MyAppComponent;
 })();
 angular2_1.bootstrap(MyAppComponent);
+//# sourceMappingURL=main.js.map

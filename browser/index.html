@@ -5,11 +5,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="col-md-12">
-        <my-app>
-          Loading...
-        </my-app>
+    <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-12 nopadding">
+           <my-app>
+             Loading...
+           </my-app>
+         </div>
       </div>
     </div>
 
@@ -28,7 +30,7 @@
           'angular2-bootstrap/*': '../dist/js/cjs/*.js'
         }
       });
-      System.import('main');
+      System.import('../dist/browser/main');
     </script>
   </body>
 </html>
