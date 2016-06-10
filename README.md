@@ -71,12 +71,10 @@ I did not want to clone an existing starter branch and start off from there, rat
     Only change I made was the path to the index.html file. 
 
     ```
-    var app = require('app');  // Module to control application life.
-    var BrowserWindow = require('browser-window');  // Module to create native browser window.
+    const app = require('app');  // Module to control application life.
+    const BrowserWindow = require('browser-window');  // Module to create native browser window.
     
-    // Report crashes to our server.
-    require('crash-reporter').start();
-    
+
     // Keep a global reference of the window object, if you don't, the window will
     // be closed automatically when the JavaScript object is GCed.
     var mainWindow = null;
@@ -97,7 +95,7 @@ I did not want to clone an existing starter branch and start off from there, rat
       mainWindow = new BrowserWindow({width: 800, height: 600});
     
       // and load the index.html of the app.
-      mainWindow.loadUrl('file://' + __dirname + '/../browser/index.html');
+      mainWindow.loadURL('file://' + __dirname + '/../browser/index.html');
     
       // Open the devtools.
       mainWindow.openDevTools();
